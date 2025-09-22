@@ -12,6 +12,15 @@
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
+  {
+    'saifulapm/commasemi.nvim', -- Add semicolon to the EOL
+    lazy = false,
+    opts = {
+      leader = '<space>',
+      keymaps = true,
+      commands = true,
+    },
+  },
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -24,23 +33,14 @@ require('lazy').setup({
   -- include a plugin definition from file lua/path/name.lua
 
   require 'kickstart.plugins.gitsigns',
-
   require 'kickstart.plugins.which-key',
-
   require 'kickstart.plugins.telescope',
-
   require 'kickstart.plugins.lspconfig',
-
   require 'kickstart.plugins.conform',
-
   require 'kickstart.plugins.blink-cmp',
-
   require 'kickstart.plugins.tokyonight',
-
   require 'kickstart.plugins.todo-comments',
-
   require 'kickstart.plugins.mini',
-
   require 'kickstart.plugins.treesitter',
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
@@ -53,8 +53,8 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
 
