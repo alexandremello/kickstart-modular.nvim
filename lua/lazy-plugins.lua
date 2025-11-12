@@ -21,6 +21,11 @@ require('lazy').setup({
       commands = true,
     },
   },
+  {
+    'pmizio/typescript-tools.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    opts = {},
+  },
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
