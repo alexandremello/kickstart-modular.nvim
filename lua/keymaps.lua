@@ -34,6 +34,9 @@ vim.keymap.set('n', '<leader>wL', '<C-w>L', { desc = 'Move window to the right' 
 vim.keymap.set('n', '<leader>wJ', '<C-w>J', { desc = 'Move window to the lower' })
 vim.keymap.set('n', '<leader>wK', '<C-w>K', { desc = 'Move window to the upper' })
 
+-- LSP
+vim.keymap.set('n', '<leader>ld', '<cmd>TSToolsGoToSourceDefinition<CR>', { desc = 'Go To Source Definition' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
