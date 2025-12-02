@@ -71,4 +71,8 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+vim.opt.tabstop = 2 -- A TAB character in the file is displayed as 4 spaces
+vim.opt.shiftwidth = 2 -- The number of spaces used for each step of (auto)indent
+vim.opt.softtabstop = 2 -- Number of spaces to insert when pressing Tab in Insert mode
+vim.opt.expandtab = true -- Converts tabs to spaces when you press the Tab key
 -- vim: ts=2 sts=2 sw=2 et
