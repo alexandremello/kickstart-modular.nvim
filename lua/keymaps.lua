@@ -22,6 +22,12 @@ vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
+-- Colemak hd - Tarmak 1
+vim.keymap.set({ 'n', 'v', 'x' }, 'h', '<left>', { desc = 'Left Tarmak 1' })
+vim.keymap.set({ 'n', 'v', 'x' }, 'n', '<down>', { desc = 'Up Tarmak 1' })
+vim.keymap.set({ 'n', 'v', 'x' }, 'e', '<up>', { desc = 'Down Tarmak 1' })
+vim.keymap.set({ 'n', 'v', 'x' }, 'l', '<right>', { desc = 'Left Tarmak 1' })
+
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<leader>wh', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<leader>wl', '<C-w><C-l>', { desc = 'Move focus to the right window' })
