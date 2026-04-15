@@ -17,28 +17,28 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- TIP: Disable arrow keys in normal mode
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set('n', '<left>', '<cmd>echo "Use m to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set('n', '<up>', '<cmd>echo "Use e to move!!"<CR>')
+vim.keymap.set('n', '<down>', '<cmd>echo "Use n to move!!"<CR>')
 
--- Colemak hd - Tarmak 1
-vim.keymap.set({ 'n', 'v', 'x' }, 'h', '<left>', { desc = 'Left Tarmak 1' })
+-- Colemak hd - Tarmak 2
+vim.keymap.set({ 'n', 'v', 'x' }, 'm', '<left>', { desc = 'Left Tarmak 1' })
 vim.keymap.set({ 'n', 'v', 'x' }, 'n', '<down>', { desc = 'Up Tarmak 1' })
 vim.keymap.set({ 'n', 'v', 'x' }, 'e', '<up>', { desc = 'Down Tarmak 1' })
 vim.keymap.set({ 'n', 'v', 'x' }, 'l', '<right>', { desc = 'Left Tarmak 1' })
 
 --  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<leader>wh', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<leader>wm', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<leader>wl', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<leader>wj', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<leader>wk', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+vim.keymap.set('n', '<leader>wn', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+vim.keymap.set('n', '<leader>we', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 vim.keymap.set('n', '<leader>wH', '<C-w>H', { desc = 'Move window to the left' })
 vim.keymap.set('n', '<leader>wL', '<C-w>L', { desc = 'Move window to the right' })
-vim.keymap.set('n', '<leader>wJ', '<C-w>J', { desc = 'Move window to the lower' })
-vim.keymap.set('n', '<leader>wK', '<C-w>K', { desc = 'Move window to the upper' })
+vim.keymap.set('n', '<leader>wN', '<C-w>J', { desc = 'Move window to the lower' })
+vim.keymap.set('n', '<leader>wE', '<C-w>K', { desc = 'Move window to the upper' })
 
 -- LSP
 vim.keymap.set('n', '<leader>ld', '<cmd>TSToolsGoToSourceDefinition<CR>', { desc = 'Go To Source Definition' })

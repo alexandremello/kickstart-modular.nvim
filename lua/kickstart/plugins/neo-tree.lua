@@ -20,12 +20,11 @@ return {
           ['\\'] = 'close_window',
 
           -- Tarmak 1
-          ['h'] = 'close_node', -- Esquerda (Tarmak 1)
+          ['m'] = 'close_node', -- Esquerda (Tarmak 1)
           ['n'] = 'move_cursor_down', -- Baixo
           ['e'] = 'move_cursor_up', -- Cima
-          ['i'] = 'open', -- Direita / Abrir (Substitui o padrão 'l')
+          ['l'] = 'open', -- Direita / Abrir (Substitui o padrão 'l')
 
-          ['l'] = 'none', -- Desativa o 'l' original
           ['j'] = 'none', -- Desativa o 'j' original
           ['k'] = 'none', -- Desativa o 'k' original
         },
