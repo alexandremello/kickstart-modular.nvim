@@ -22,11 +22,12 @@ vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use e to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use n to move!!"<CR>')
 
--- Colemak hd - Tarmak 2
-vim.keymap.set({ 'n', 'v', 'x' }, 'm', '<left>', { desc = 'Left Tarmak 1' })
-vim.keymap.set({ 'n', 'v', 'x' }, 'n', '<down>', { desc = 'Up Tarmak 1' })
-vim.keymap.set({ 'n', 'v', 'x' }, 'e', '<up>', { desc = 'Down Tarmak 1' })
-vim.keymap.set({ 'n', 'v', 'x' }, 'l', '<right>', { desc = 'Left Tarmak 1' })
+-- Colemak hd - Tarmak 1b
+vim.keymap.set({ 'n', 'v', 'x' }, 'm', '<left>', { desc = 'Left Tarmak 1b' })
+vim.keymap.set({ 'n', 'v', 'x' }, 'n', '<down>', { desc = 'Up Tarmak 1b' })
+vim.keymap.set({ 'n', 'v', 'x' }, 'e', '<up>', { desc = 'Down Tarmak 1b' })
+vim.keymap.set({ 'n', 'v', 'x' }, 'l', '<right>', { desc = 'Left Tarmak 1b' })
+vim.keymap.set({ 'n' }, 'k', 'n', { desc = 'Find next - Tarmak 1b' })
 
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<leader>wm', '<C-w><C-h>', { desc = 'Move focus to the left window' })
